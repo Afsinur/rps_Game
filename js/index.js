@@ -3,6 +3,7 @@ const app = {
     return {
       pHands: ["1F44A", "1F590", "270C"],
       hCounter: null,
+      gmCounter: 0,
       timeOutT: 250,
       chanceTime1: true,
       chanceTime2: true,
@@ -29,6 +30,7 @@ const app = {
           this.resultArray.push(pRandhObj);
           //------------------
           if (this.hCounter % 2 == 0) {
+            this.gmCounter++;
             if (
               this.resultArray[0].data1 == "270C" &&
               this.resultArray[1].data1 == "1F44A"
@@ -118,6 +120,7 @@ const app = {
           this.resultArray.push(pRandhObj1);
           //------------------
           if (this.hCounter % 2 == 0) {
+            this.gmCounter++;
             if (
               this.resultArray[0].data1 == "270C" &&
               this.resultArray[1].data1 == "1F44A"
