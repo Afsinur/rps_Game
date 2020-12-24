@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  height: 100vh;
+  width: 50%;
+}
+header {
+  font-weight: 500;
+}
+/*
+1.Results
+2.Game
+*/
+/*1.Results*/
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  height: 100vh;
+  background: #ededed;
+}
+.results {
+  position: relative;
+  margin: 15px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+.results div {
+  position: relative;
+  width: 100%;
+}
+.resultsHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.scoresDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.scoresDiv div {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.scoresDiv div span {
+  font-size: 30px;
+  font-weight: 500;
+  color: rgb(0, 89, 255);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+/*2.Game*/
+.div0 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.playC {
+  font-size: 50px;
+  position: relative;
+  height: 100px;
+  width: 100px;
+  border: 2px solid #08f;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.cmnDiv {
+  position: relative;
+  margin: 5px;
+}
+.cmnDiv button {
+  margin: 5px;
+  padding: 2px 8px;
+  cursor: pointer;
+  background-color: #0cf;
+  border: none;
+  border-radius: 2px;
+}
+.cmnDiv button:hover {
+  background-color: #08f;
+}
+.cmnDiv button::before {
+  content: "Go";
+  position: absolute;
+  left: 3px;
+  padding: 3px 10px;
+  border-radius: 2px;
+  background-color: #ccc;
+  filter: blur(2px);
+  z-index: -1;
+}
+.cmnDiv button:hover::before {
+  background-color: #aaa;
+}
+.disA1 {
+  background-color: #aaa !important;
+  cursor: no-drop !important;
+}

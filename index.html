@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, Paper, Scissors Game.</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="https://unpkg.com/vue@next"></script>
+  </head>
+  <body>
+    <div id="app">
+      <p id="p1" v-for="(pHd, index) in pHands" :key="index"></p>
+      <header>Rock, Paper, Scissors Game.</header>
+      <!-- 1.Results -->
+      <div class="results">
+        <div class="resultsHeader"><h2>Points</h2></div>
+        <div class="scoresDiv">
+          <div><b>Player 1</b> - &nbsp;<span id="innerScSp1">0</span></div>
+          <div><span id="innerScSp2">0</span>&nbsp; - <b>Player 2</b></div>
+        </div>
+      </div>
+      <!-- 2.Game -->
+      <div class="div0">
+        <div class="cmnDiv div1">
+          <h2>Player 1</h2>
+          <button v-show="chanceTime1" @click="go(1)">Go</button>
+          <button v-show="!chanceTime1" class="disA1">Go</button>
+        </div>
+        <div class="playC player1">&#x1F44A;</div>
+        <div class="playC player2">&#x1F44A;</div>
+        <div class="cmnDiv div2">
+          <h2>Player 2</h2>
+          <button v-show="chanceTime2" @click="go(2)">Go</button>
+          <button v-show="!chanceTime2" class="disA1">Go</button>
+        </div>
+      </div>
+    </div>
+    <footer style="width: 100%">&copy;2020</footer>
+    <!-- index vue file -->
+    <script src="js/index.js"></script>
+  </body>
+</html>
